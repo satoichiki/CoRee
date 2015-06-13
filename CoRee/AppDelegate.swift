@@ -15,18 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func createMenuView() {
         
-        // create viewController code...
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("MainViewController") as! MainViewController
-        let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
-        let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
+        let mainViewController = storyboard.instantiateViewControllerWithIdentifier("RecommendViewController") as! RecommendViewController
+        let menuViewController = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
         
         let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
-        leftViewController.mainViewController = nvc
+        menuViewController.mainViewController = nvc
         
-        let slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
+        let slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: menuViewController)
         
         self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
         self.window?.rootViewController = slideMenuController

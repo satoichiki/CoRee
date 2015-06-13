@@ -1,13 +1,12 @@
 //
-//  MenuViewController.swift
-//  CoRee
+//  LeftViewController.swift
+//  SlideMenuControllerSwift
 //
-//  Created by 佐藤一輝 on 2015/06/13.
-//  Copyright (c) 2015年 validtationError. All rights reserved.
+//  Created by Yuji Hato on 12/3/14.
 //
 
 import UIKit
-/*
+
 enum LeftMenu: Int {
     case Main = 0
     case Closet
@@ -19,11 +18,11 @@ protocol LeftMenuProtocol : class {
 }
 
 class MenuViewController : UIViewController, LeftMenuProtocol {
+    
 
     
-    @IBOutlet var tableView: UITableView!
-
-    var menus = ["おすすめ", "クローゼット", "プロフィール"]
+    @IBOutlet weak var tableView: UITableView!
+    var menus = ["今日のおすすめ", "クローゼット", "プロフィール"]
     var mainViewController: UIViewController!
     var closetViewController: UIViewController!
     var profileViewController: UIViewController!
@@ -31,10 +30,12 @@ class MenuViewController : UIViewController, LeftMenuProtocol {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 1.0)
+        
+        self.tableView.backgroundColor = UIColor(red: 34/255, green: 37/255, blue: 63/255, alpha: 1.0)
         
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         let closetViewController = storyboard.instantiateViewControllerWithIdentifier("ClosetViewController") as! ClosetViewController
@@ -56,7 +57,7 @@ class MenuViewController : UIViewController, LeftMenuProtocol {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: BaseTableViewCell = BaseTableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: BaseTableViewCell.identifier)
-        cell.backgroundColor = UIColor(red: 64/255, green: 170/255, blue: 239/255, alpha: 1.0)
+        cell.backgroundColor = UIColor(red: 34/255, green: 37/255, blue: 63/255, alpha: 1.0)
         cell.textLabel?.font = UIFont.italicSystemFontOfSize(18)
         cell.textLabel?.textColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
         cell.textLabel?.text = menus[indexPath.row]
@@ -85,5 +86,3 @@ class MenuViewController : UIViewController, LeftMenuProtocol {
     }
     
 }
-
-*/
