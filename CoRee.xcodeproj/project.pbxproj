@@ -13,6 +13,7 @@
 		D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7831B2AE2EA00BC871B /* Images.xcassets */; };
 		D2EEE7871B2AE2EA00BC871B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7851B2AE2EA00BC871B /* LaunchScreen.xib */; };
 		D2EEE7931B2AE2EA00BC871B /* CoReeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEE7921B2AE2EA00BC871B /* CoReeTests.swift */; };
+		D2EEE79D1B2BE74700BC871B /* CoRee-title.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE79C1B2BE74700BC871B /* CoRee-title.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D2EEE78C1B2AE2EA00BC871B /* CoReeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoReeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EEE7911B2AE2EA00BC871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2EEE7921B2AE2EA00BC871B /* CoReeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoReeTests.swift; sourceTree = "<group>"; };
+		D2EEE79C1B2BE74700BC871B /* CoRee-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CoRee-title.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				D2EEE7801B2AE2EA00BC871B /* Main.storyboard */,
 				D2EEE7831B2AE2EA00BC871B /* Images.xcassets */,
 				D2EEE7851B2AE2EA00BC871B /* LaunchScreen.xib */,
+				D2EEE79C1B2BE74700BC871B /* CoRee-title.png */,
 				D2EEE77A1B2AE2EA00BC871B /* Supporting Files */,
 			);
 			path = CoRee;
@@ -195,6 +198,7 @@
 				D2EEE7821B2AE2EA00BC871B /* Main.storyboard in Resources */,
 				D2EEE7871B2AE2EA00BC871B /* LaunchScreen.xib in Resources */,
 				D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */,
+				D2EEE79D1B2BE74700BC871B /* CoRee-title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				D2EEE7981B2AE2EA00BC871B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2EEE7991B2AE2EA00BC871B /* Build configuration list for PBXNativeTarget "CoReeTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				D2EEE79B1B2AE2EA00BC871B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
