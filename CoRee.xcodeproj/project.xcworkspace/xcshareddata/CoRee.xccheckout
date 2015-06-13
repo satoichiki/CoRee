@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C400FA169B775BDE022F6F781E86C410F81CB5CD</key>
-		<string>https://github.com/Asuforce/CoRee</string>
+		<string>https://github.com/satoichiki/CoRee</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CoRee.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Asuforce/CoRee</string>
+	<string>https://github.com/satoichiki/CoRee</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
