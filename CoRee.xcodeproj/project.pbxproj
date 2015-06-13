@@ -14,6 +14,10 @@
 		D2EEE7871B2AE2EA00BC871B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7851B2AE2EA00BC871B /* LaunchScreen.xib */; };
 		D2EEE7931B2AE2EA00BC871B /* CoReeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEE7921B2AE2EA00BC871B /* CoReeTests.swift */; };
 		D2EEE79D1B2BE74700BC871B /* CoRee-title.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE79C1B2BE74700BC871B /* CoRee-title.png */; };
+		D2EEE79F1B2BEFBC00BC871B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEE79E1B2BEFBC00BC871B /* LoginViewController.swift */; };
+		D2EEE7A31B2BF11700BC871B /* background-login-img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7A21B2BF11700BC871B /* background-login-img.jpeg */; };
+		D2EEE7A51B2BF1D600BC871B /* CoRee-white-title.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7A41B2BF1D600BC871B /* CoRee-white-title.png */; };
+		D2EEE7A71B2BF46B00BC871B /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEE7A61B2BF46B00BC871B /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		D2EEE7911B2AE2EA00BC871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2EEE7921B2AE2EA00BC871B /* CoReeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoReeTests.swift; sourceTree = "<group>"; };
 		D2EEE79C1B2BE74700BC871B /* CoRee-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CoRee-title.png"; sourceTree = "<group>"; };
+		D2EEE79E1B2BEFBC00BC871B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D2EEE7A21B2BF11700BC871B /* background-login-img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background-login-img.jpeg"; sourceTree = "<group>"; };
+		D2EEE7A41B2BF1D600BC871B /* CoRee-white-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CoRee-white-title.png"; sourceTree = "<group>"; };
+		D2EEE7A61B2BF46B00BC871B /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +89,14 @@
 			children = (
 				D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */,
 				D2EEE77E1B2AE2EA00BC871B /* ViewController.swift */,
+				D2EEE7A61B2BF46B00BC871B /* RecommendViewController.swift */,
+				D2EEE79E1B2BEFBC00BC871B /* LoginViewController.swift */,
 				D2EEE7801B2AE2EA00BC871B /* Main.storyboard */,
 				D2EEE7831B2AE2EA00BC871B /* Images.xcassets */,
 				D2EEE7851B2AE2EA00BC871B /* LaunchScreen.xib */,
+				D2EEE7A21B2BF11700BC871B /* background-login-img.jpeg */,
 				D2EEE79C1B2BE74700BC871B /* CoRee-title.png */,
+				D2EEE7A41B2BF1D600BC871B /* CoRee-white-title.png */,
 				D2EEE77A1B2AE2EA00BC871B /* Supporting Files */,
 			);
 			path = CoRee;
@@ -196,6 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2EEE7821B2AE2EA00BC871B /* Main.storyboard in Resources */,
+				D2EEE7A51B2BF1D600BC871B /* CoRee-white-title.png in Resources */,
+				D2EEE7A31B2BF11700BC871B /* background-login-img.jpeg in Resources */,
 				D2EEE7871B2AE2EA00BC871B /* LaunchScreen.xib in Resources */,
 				D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */,
 				D2EEE79D1B2BE74700BC871B /* CoRee-title.png in Resources */,
@@ -216,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2EEE79F1B2BEFBC00BC871B /* LoginViewController.swift in Sources */,
+				D2EEE7A71B2BF46B00BC871B /* RecommendViewController.swift in Sources */,
 				D2EEE77F1B2AE2EA00BC871B /* ViewController.swift in Sources */,
 				D2EEE77D1B2AE2EA00BC871B /* AppDelegate.swift in Sources */,
 			);

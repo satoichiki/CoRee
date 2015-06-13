@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Ef-Iv-OZr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Recommend View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CoRee" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="vXZ-lx-hvc" customClass="RecommendViewController" customModule="CoRee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,6 +20,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="883" y="181"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="SIF-hg-R6u">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="1Ef-Iv-OZr" customClass="LoginViewController" customModule="CoRee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dfZ-B9-UTO"/>
+                        <viewControllerLayoutGuide type="bottom" id="W05-Eb-SAT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4iU-hM-Ms6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background-login-img.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="f4e-Bh-mta">
+                                <rect key="frame" x="-29" y="0.0" width="629" height="628"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoRee-white-title.png" translatesAutoresizingMaskIntoConstraints="NO" id="aTT-8t-scf">
+                                <rect key="frame" x="225" y="123" width="150" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="jdn-kA-HDO"/>
+                                    <constraint firstAttribute="height" constant="35" id="wzt-sd-obc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎日のコーディネートを快適に" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wki-jC-Fl1">
+                                <rect key="frame" x="181" y="166" width="238" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="CJt-a1-XEE"/>
+                                    <constraint firstAttribute="width" constant="238" id="fOS-0Q-WYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="aTT-8t-scf" secondAttribute="centerX" id="9b5-PN-eEC"/>
+                            <constraint firstItem="aTT-8t-scf" firstAttribute="top" secondItem="dfZ-B9-UTO" secondAttribute="bottom" constant="103" id="HAB-SD-OJV"/>
+                            <constraint firstAttribute="centerX" secondItem="wki-jC-Fl1" secondAttribute="centerX" id="ODt-c9-if4"/>
+                            <constraint firstItem="wki-jC-Fl1" firstAttribute="top" secondItem="aTT-8t-scf" secondAttribute="bottom" constant="8" id="rsS-Ah-H37"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohw-Su-Wkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CoRee-white-title.png" width="1051" height="245"/>
+        <image name="background-login-img.jpeg" width="826" height="550"/>
+    </resources>
 </document>
