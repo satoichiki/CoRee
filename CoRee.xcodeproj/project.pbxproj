@@ -13,13 +13,15 @@
 		D258963C1B2C1CA300D6CF55 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896391B2C1CA300D6CF55 /* UITableViewExtension.swift */; };
 		D258963D1B2C1CA300D6CF55 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258963A1B2C1CA300D6CF55 /* UIViewControllerExtension.swift */; };
 		D25896571B2C24C800D6CF55 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896511B2C24C800D6CF55 /* MenuViewController.swift */; };
-		D25896581B2C24C800D6CF55 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896521B2C24C800D6CF55 /* RightViewController.swift */; };
 		D25896591B2C24C800D6CF55 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896531B2C24C800D6CF55 /* ClosetViewController.swift */; };
 		D258965A1B2C24C800D6CF55 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896541B2C24C800D6CF55 /* ProfileViewController.swift */; };
-		D258965B1B2C24C800D6CF55 /* GoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896551B2C24C800D6CF55 /* GoViewController.swift */; };
-		D258965C1B2C24C800D6CF55 /* NonMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896561B2C24C800D6CF55 /* NonMenuController.swift */; };
-		D258965E1B2C24D900D6CF55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258965D1B2C24D900D6CF55 /* MainViewController.swift */; };
-		D26532CE1B2C04EE00D5389C /* camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D26532CD1B2C04EE00D5389C /* camera-icon.png */; };
+		D25896601B2C3A4400D6CF55 /* ClosetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258965F1B2C3A4400D6CF55 /* ClosetDetailViewController.swift */; };
+		D25896621B2C3C2600D6CF55 /* ClosetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896611B2C3C2600D6CF55 /* ClosetCell.swift */; };
+		D258966B1B2C4BFF00D6CF55 /* hat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25896661B2C4BFE00D6CF55 /* hat.jpg */; };
+		D258966C1B2C4BFF00D6CF55 /* jacket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25896671B2C4BFF00D6CF55 /* jacket.jpg */; };
+		D258966D1B2C4BFF00D6CF55 /* pants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25896681B2C4BFF00D6CF55 /* pants.jpg */; };
+		D258966E1B2C4BFF00D6CF55 /* shoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25896691B2C4BFF00D6CF55 /* shoes.jpg */; };
+		D258966F1B2C4BFF00D6CF55 /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D258966A1B2C4BFF00D6CF55 /* tops.jpg */; };
 		D2EEE77D1B2AE2EA00BC871B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */; };
 		D2EEE7821B2AE2EA00BC871B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7801B2AE2EA00BC871B /* Main.storyboard */; };
 		D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7831B2AE2EA00BC871B /* Images.xcassets */; };
@@ -44,19 +46,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D258962A1B2C082200D6CF55 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		D258962A1B2C082200D6CF55 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = CoRee/SlideMenuController.swift; sourceTree = "<group>"; };
 		D25896361B2C1C9500D6CF55 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		D25896381B2C1CA300D6CF55 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D25896391B2C1CA300D6CF55 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		D258963A1B2C1CA300D6CF55 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		D25896511B2C24C800D6CF55 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		D25896521B2C24C800D6CF55 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		D25896531B2C24C800D6CF55 /* ClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		D25896541B2C24C800D6CF55 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		D25896551B2C24C800D6CF55 /* GoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoViewController.swift; sourceTree = "<group>"; };
-		D25896561B2C24C800D6CF55 /* NonMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMenuController.swift; sourceTree = "<group>"; };
-		D258965D1B2C24D900D6CF55 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		D26532CD1B2C04EE00D5389C /* camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon.png"; sourceTree = "<group>"; };
+		D258965F1B2C3A4400D6CF55 /* ClosetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetDetailViewController.swift; sourceTree = "<group>"; };
+		D25896611B2C3C2600D6CF55 /* ClosetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetCell.swift; sourceTree = "<group>"; };
+		D25896661B2C4BFE00D6CF55 /* hat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hat.jpg; sourceTree = "<group>"; };
+		D25896671B2C4BFF00D6CF55 /* jacket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jacket.jpg; sourceTree = "<group>"; };
+		D25896681B2C4BFF00D6CF55 /* pants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pants.jpg; sourceTree = "<group>"; };
+		D25896691B2C4BFF00D6CF55 /* shoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoes.jpg; sourceTree = "<group>"; };
+		D258966A1B2C4BFF00D6CF55 /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tops.jpg; sourceTree = "<group>"; };
 		D2EEE7771B2AE2EA00BC871B /* CoRee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoRee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EEE77B1B2AE2EA00BC871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,12 +99,26 @@
 		D25896351B2C1C6000D6CF55 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D258962A1B2C082200D6CF55 /* SlideMenuController.swift */,
 				D25896361B2C1C9500D6CF55 /* BaseTableViewCell.swift */,
+				D25896611B2C3C2600D6CF55 /* ClosetCell.swift */,
 				D25896381B2C1CA300D6CF55 /* StringExtension.swift */,
 				D25896391B2C1CA300D6CF55 /* UITableViewExtension.swift */,
 				D258963A1B2C1CA300D6CF55 /* UIViewControllerExtension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		D25896631B2C3DB100D6CF55 /* cloth-image */ = {
+			isa = PBXGroup;
+			children = (
+				D25896661B2C4BFE00D6CF55 /* hat.jpg */,
+				D25896671B2C4BFF00D6CF55 /* jacket.jpg */,
+				D25896681B2C4BFF00D6CF55 /* pants.jpg */,
+				D25896691B2C4BFF00D6CF55 /* shoes.jpg */,
+				D258966A1B2C4BFF00D6CF55 /* tops.jpg */,
+			);
+			name = "cloth-image";
 			sourceTree = "<group>";
 		};
 		D2EEE76E1B2AE2EA00BC871B = {
@@ -126,24 +144,20 @@
 			isa = PBXGroup;
 			children = (
 				D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */,
-				D258962A1B2C082200D6CF55 /* SlideMenuController.swift */,
 				D2EEE7A61B2BF46B00BC871B /* RecommendViewController.swift */,
 				D2EEE79E1B2BEFBC00BC871B /* LoginViewController.swift */,
 				D2EEE7AA1B2BFBDB00BC871B /* LoginLoadViewController.swift */,
-				D258965D1B2C24D900D6CF55 /* MainViewController.swift */,
 				D25896511B2C24C800D6CF55 /* MenuViewController.swift */,
-				D25896521B2C24C800D6CF55 /* RightViewController.swift */,
 				D25896531B2C24C800D6CF55 /* ClosetViewController.swift */,
+				D258965F1B2C3A4400D6CF55 /* ClosetDetailViewController.swift */,
 				D25896541B2C24C800D6CF55 /* ProfileViewController.swift */,
-				D25896551B2C24C800D6CF55 /* GoViewController.swift */,
-				D25896561B2C24C800D6CF55 /* NonMenuController.swift */,
 				D2EEE7801B2AE2EA00BC871B /* Main.storyboard */,
 				D2EEE7831B2AE2EA00BC871B /* Images.xcassets */,
 				D2EEE7851B2AE2EA00BC871B /* LaunchScreen.xib */,
 				D2EEE7A21B2BF11700BC871B /* background-login-img.jpeg */,
 				D2EEE79C1B2BE74700BC871B /* CoRee-title.png */,
 				D2EEE7A41B2BF1D600BC871B /* CoRee-white-title.png */,
-				D26532CD1B2C04EE00D5389C /* camera-icon.png */,
+				D25896631B2C3DB100D6CF55 /* cloth-image */,
 				D2EEE77A1B2AE2EA00BC871B /* Supporting Files */,
 			);
 			path = CoRee;
@@ -257,10 +271,14 @@
 				D2EEE7821B2AE2EA00BC871B /* Main.storyboard in Resources */,
 				D2EEE7A51B2BF1D600BC871B /* CoRee-white-title.png in Resources */,
 				D2EEE7A31B2BF11700BC871B /* background-login-img.jpeg in Resources */,
-				D26532CE1B2C04EE00D5389C /* camera-icon.png in Resources */,
+				D258966C1B2C4BFF00D6CF55 /* jacket.jpg in Resources */,
+				D258966E1B2C4BFF00D6CF55 /* shoes.jpg in Resources */,
+				D258966F1B2C4BFF00D6CF55 /* tops.jpg in Resources */,
 				D2EEE7871B2AE2EA00BC871B /* LaunchScreen.xib in Resources */,
+				D258966D1B2C4BFF00D6CF55 /* pants.jpg in Resources */,
 				D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */,
 				D2EEE79D1B2BE74700BC871B /* CoRee-title.png in Resources */,
+				D258966B1B2C4BFF00D6CF55 /* hat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,16 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2EEE79F1B2BEFBC00BC871B /* LoginViewController.swift in Sources */,
-				D25896581B2C24C800D6CF55 /* RightViewController.swift in Sources */,
+				D25896621B2C3C2600D6CF55 /* ClosetCell.swift in Sources */,
 				D2EEE7A71B2BF46B00BC871B /* RecommendViewController.swift in Sources */,
 				D25896591B2C24C800D6CF55 /* ClosetViewController.swift in Sources */,
 				D258965A1B2C24C800D6CF55 /* ProfileViewController.swift in Sources */,
-				D258965E1B2C24D900D6CF55 /* MainViewController.swift in Sources */,
-				D258965B1B2C24C800D6CF55 /* GoViewController.swift in Sources */,
+				D25896601B2C3A4400D6CF55 /* ClosetDetailViewController.swift in Sources */,
 				D258963B1B2C1CA300D6CF55 /* StringExtension.swift in Sources */,
 				D25896571B2C24C800D6CF55 /* MenuViewController.swift in Sources */,
 				D2EEE77D1B2AE2EA00BC871B /* AppDelegate.swift in Sources */,
-				D258965C1B2C24C800D6CF55 /* NonMenuController.swift in Sources */,
 				D258963C1B2C1CA300D6CF55 /* UITableViewExtension.swift in Sources */,
 				D25896371B2C1C9500D6CF55 /* BaseTableViewCell.swift in Sources */,
 				D258963D1B2C1CA300D6CF55 /* UIViewControllerExtension.swift in Sources */,

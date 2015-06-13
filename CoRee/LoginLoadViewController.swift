@@ -8,6 +8,10 @@
 
 import UIKit
 
+/*
+ログインの処理画面
+ログイン処理完了時→RecommendViewControllerへリダイレクト
+*/
 class LoginLoadViewController: UIViewController {
     
     override func viewDidLoad() {

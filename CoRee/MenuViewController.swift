@@ -17,6 +17,9 @@ protocol LeftMenuProtocol : class {
     func changeViewController(menu: LeftMenu)
 }
 
+/*
+サイドメニュー画面
+*/
 class MenuViewController : UIViewController, LeftMenuProtocol {
     
 
@@ -83,6 +86,10 @@ class MenuViewController : UIViewController, LeftMenuProtocol {
         default:
             break
         }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
 }

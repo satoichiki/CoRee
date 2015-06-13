@@ -9,6 +9,9 @@
 
 import UIKit
 
+/*
+ログイン画面
+*/
 class LoginViewController: UIViewController {
     
     override func viewDidLoad() {

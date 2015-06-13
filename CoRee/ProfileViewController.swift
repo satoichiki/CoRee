@@ -11,11 +11,16 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
+        self.title = "プロフィール"
         super.viewDidLoad()
     }
  
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.setNavigationBarItem()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
 }

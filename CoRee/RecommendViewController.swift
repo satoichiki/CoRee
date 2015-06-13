@@ -8,6 +8,9 @@
 
 import UIKit
 
+/*
+ユーザのオススメ画面
+*/
 class RecommendViewController: UIViewController {
     
     override func viewDidLoad() {
