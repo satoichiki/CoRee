@@ -33,7 +33,14 @@
 		D25896851B2C86AC00D6CF55 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896811B2C86AC00D6CF55 /* TwitterCore.framework */; };
 		D25896891B2CB41100D6CF55 /* QrReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896881B2CB41100D6CF55 /* QrReadViewController.swift */; };
 		D258968B1B2CBE8600D6CF55 /* AddNewClothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258968A1B2CBE8600D6CF55 /* AddNewClothViewController.swift */; };
-		D25896911B2CE56100D6CF55 /* Singletone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896901B2CE56100D6CF55 /* Singletone.swift */; };
+		D25896931B2D1ACA00D6CF55 /* UtilSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896921B2D1ACA00D6CF55 /* UtilSingleton.swift */; };
+		D25896A51B2D1E6500D6CF55 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D258969D1B2D1E6500D6CF55 /* libPayPalMobile.a */; };
+		D25896A71B2D1EDB00D6CF55 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896A61B2D1EDB00D6CF55 /* SystemConfiguration.framework */; };
+		D25896A91B2D1EE700D6CF55 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896A81B2D1EE700D6CF55 /* MobileCoreServices.framework */; };
+		D25896AB1B2D1EF100D6CF55 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896AA1B2D1EF100D6CF55 /* MessageUI.framework */; };
+		D25896AD1B2D1EF900D6CF55 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896AC1B2D1EF900D6CF55 /* CoreMedia.framework */; };
+		D25896AF1B2D1F0A00D6CF55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896AE1B2D1F0A00D6CF55 /* AVFoundation.framework */; };
+		D25896B11B2D1F1200D6CF55 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896B01B2D1F1200D6CF55 /* AudioToolbox.framework */; };
 		D2EEE77D1B2AE2EA00BC871B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */; };
 		D2EEE7821B2AE2EA00BC871B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7801B2AE2EA00BC871B /* Main.storyboard */; };
 		D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7831B2AE2EA00BC871B /* Images.xcassets */; };
@@ -78,13 +85,36 @@
 		D25896771B2C779100D6CF55 /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		D25896781B2C779100D6CF55 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
 		D25896791B2C779100D6CF55 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
-		D258967E1B2C86AC00D6CF55 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		D258967F1B2C86AC00D6CF55 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		D25896801B2C86AC00D6CF55 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
-		D25896811B2C86AC00D6CF55 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		D258967E1B2C86AC00D6CF55 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = CoRee/Fabric.framework; sourceTree = "<group>"; };
+		D258967F1B2C86AC00D6CF55 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = CoRee/TwitterKit.framework; sourceTree = "<group>"; };
+		D25896801B2C86AC00D6CF55 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = CoRee/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		D25896811B2C86AC00D6CF55 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = CoRee/TwitterCore.framework; sourceTree = "<group>"; };
 		D25896881B2CB41100D6CF55 /* QrReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrReadViewController.swift; sourceTree = "<group>"; };
 		D258968A1B2CBE8600D6CF55 /* AddNewClothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewClothViewController.swift; sourceTree = "<group>"; };
-		D25896901B2CE56100D6CF55 /* Singletone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Singletone.swift; path = ../Singletone.swift; sourceTree = "<group>"; };
+		D25896921B2D1ACA00D6CF55 /* UtilSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilSingleton.swift; sourceTree = "<group>"; };
+		D25896951B2D1E6500D6CF55 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		D25896961B2D1E6500D6CF55 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		D25896971B2D1E6500D6CF55 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		D25896981B2D1E6500D6CF55 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		D25896991B2D1E6500D6CF55 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		D258969A1B2D1E6500D6CF55 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		D258969B1B2D1E6500D6CF55 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		D258969C1B2D1E6500D6CF55 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		D258969D1B2D1E6500D6CF55 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		D258969E1B2D1E6500D6CF55 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		D258969F1B2D1E6500D6CF55 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		D25896A01B2D1E6500D6CF55 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		D25896A11B2D1E6500D6CF55 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		D25896A21B2D1E6500D6CF55 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		D25896A31B2D1E6500D6CF55 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		D25896A41B2D1E6500D6CF55 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		D25896A61B2D1EDB00D6CF55 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D25896A81B2D1EE700D6CF55 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D25896AA1B2D1EF100D6CF55 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D25896AC1B2D1EF900D6CF55 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D25896AE1B2D1F0A00D6CF55 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D25896B01B2D1F1200D6CF55 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D25896B21B2D1F6E00D6CF55 /* CoRee-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoRee-Bridging-Header.h"; sourceTree = "<group>"; };
 		D2EEE7771B2AE2EA00BC871B /* CoRee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoRee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EEE77B1B2AE2EA00BC871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,9 +137,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25896B11B2D1F1200D6CF55 /* AudioToolbox.framework in Frameworks */,
+				D25896AF1B2D1F0A00D6CF55 /* AVFoundation.framework in Frameworks */,
 				D25896711B2C530A00D6CF55 /* CoreLocation.framework in Frameworks */,
+				D25896AD1B2D1EF900D6CF55 /* CoreMedia.framework in Frameworks */,
+				D25896AB1B2D1EF100D6CF55 /* MessageUI.framework in Frameworks */,
+				D25896A91B2D1EE700D6CF55 /* MobileCoreServices.framework in Frameworks */,
+				D25896A71B2D1EDB00D6CF55 /* SystemConfiguration.framework in Frameworks */,
 				D25896851B2C86AC00D6CF55 /* TwitterCore.framework in Frameworks */,
 				D25896821B2C86AC00D6CF55 /* Fabric.framework in Frameworks */,
+				D25896A51B2D1E6500D6CF55 /* libPayPalMobile.a in Frameworks */,
 				D25896831B2C86AC00D6CF55 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,14 +197,48 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		D25896941B2D1E6500D6CF55 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				D25896951B2D1E6500D6CF55 /* CardIO.h */,
+				D25896961B2D1E6500D6CF55 /* CardIOCreditCardInfo.h */,
+				D25896971B2D1E6500D6CF55 /* CardIODetectionMode.h */,
+				D25896981B2D1E6500D6CF55 /* CardIOPaymentViewController.h */,
+				D25896991B2D1E6500D6CF55 /* CardIOPaymentViewControllerDelegate.h */,
+				D258969A1B2D1E6500D6CF55 /* CardIOUtilities.h */,
+				D258969B1B2D1E6500D6CF55 /* CardIOView.h */,
+				D258969C1B2D1E6500D6CF55 /* CardIOViewDelegate.h */,
+				D258969D1B2D1E6500D6CF55 /* libPayPalMobile.a */,
+				D258969E1B2D1E6500D6CF55 /* PayPalConfiguration.h */,
+				D258969F1B2D1E6500D6CF55 /* PayPalFuturePaymentViewController.h */,
+				D25896A01B2D1E6500D6CF55 /* PayPalMobile.h */,
+				D25896A11B2D1E6500D6CF55 /* PayPalOAuthScopes.h */,
+				D25896A21B2D1E6500D6CF55 /* PayPalPayment.h */,
+				D25896A31B2D1E6500D6CF55 /* PayPalPaymentViewController.h */,
+				D25896A41B2D1E6500D6CF55 /* PayPalProfileSharingViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
 		D2EEE76E1B2AE2EA00BC871B = {
 			isa = PBXGroup;
 			children = (
+				D25896B01B2D1F1200D6CF55 /* AudioToolbox.framework */,
+				D25896AE1B2D1F0A00D6CF55 /* AVFoundation.framework */,
+				D25896AC1B2D1EF900D6CF55 /* CoreMedia.framework */,
+				D25896AA1B2D1EF100D6CF55 /* MessageUI.framework */,
+				D25896A81B2D1EE700D6CF55 /* MobileCoreServices.framework */,
+				D25896A61B2D1EDB00D6CF55 /* SystemConfiguration.framework */,
+				D258967E1B2C86AC00D6CF55 /* Fabric.framework */,
+				D258967F1B2C86AC00D6CF55 /* TwitterKit.framework */,
+				D25896801B2C86AC00D6CF55 /* TwitterKitResources.bundle */,
+				D25896811B2C86AC00D6CF55 /* TwitterCore.framework */,
 				D25896701B2C530A00D6CF55 /* CoreLocation.framework */,
 				D2EEE7791B2AE2EA00BC871B /* CoRee */,
 				D25896351B2C1C6000D6CF55 /* Extension */,
 				D2EEE78F1B2AE2EA00BC871B /* CoReeTests */,
 				D2EEE7781B2AE2EA00BC871B /* Products */,
+				D25896941B2D1E6500D6CF55 /* PayPalMobile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,7 +260,7 @@
 				D2EEE79E1B2BEFBC00BC871B /* LoginViewController.swift */,
 				D2EEE7AA1B2BFBDB00BC871B /* LoginLoadViewController.swift */,
 				D25896881B2CB41100D6CF55 /* QrReadViewController.swift */,
-				D25896901B2CE56100D6CF55 /* Singletone.swift */,
+				D25896921B2D1ACA00D6CF55 /* UtilSingleton.swift */,
 				D258968A1B2CBE8600D6CF55 /* AddNewClothViewController.swift */,
 				D25896511B2C24C800D6CF55 /* MenuViewController.swift */,
 				D25896531B2C24C800D6CF55 /* ClosetViewController.swift */,
@@ -201,13 +272,10 @@
 				D2EEE7A21B2BF11700BC871B /* background-login-img.jpeg */,
 				D2EEE79C1B2BE74700BC871B /* CoRee-title.png */,
 				D2EEE7A41B2BF1D600BC871B /* CoRee-white-title.png */,
-				D258967E1B2C86AC00D6CF55 /* Fabric.framework */,
-				D258967F1B2C86AC00D6CF55 /* TwitterKit.framework */,
-				D25896801B2C86AC00D6CF55 /* TwitterKitResources.bundle */,
-				D25896811B2C86AC00D6CF55 /* TwitterCore.framework */,
 				D25896761B2C778200D6CF55 /* weather-icon */,
 				D25896631B2C3DB100D6CF55 /* cloth-image */,
 				D2EEE77A1B2AE2EA00BC871B /* Supporting Files */,
+				D25896B21B2D1F6E00D6CF55 /* CoRee-Bridging-Header.h */,
 			);
 			path = CoRee;
 			sourceTree = "<group>";
@@ -379,7 +447,7 @@
 				D2EEE77D1B2AE2EA00BC871B /* AppDelegate.swift in Sources */,
 				D258963C1B2C1CA300D6CF55 /* UITableViewExtension.swift in Sources */,
 				D25896371B2C1C9500D6CF55 /* BaseTableViewCell.swift in Sources */,
-				D25896911B2CE56100D6CF55 /* Singletone.swift in Sources */,
+				D25896931B2D1ACA00D6CF55 /* UtilSingleton.swift in Sources */,
 				D258963D1B2C1CA300D6CF55 /* UIViewControllerExtension.swift in Sources */,
 				D258962B1B2C082200D6CF55 /* SlideMenuController.swift in Sources */,
 				D258968B1B2CBE8600D6CF55 /* AddNewClothViewController.swift in Sources */,
@@ -516,7 +584,16 @@
 				);
 				INFOPLIST_FILE = CoRee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/CoRee-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -530,7 +607,16 @@
 				);
 				INFOPLIST_FILE = CoRee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/CoRee-Bridging-Header.h";
 			};
 			name = Release;
 		};

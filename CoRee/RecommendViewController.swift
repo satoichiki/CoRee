@@ -21,6 +21,38 @@ class RecommendViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet var hat: UIImageView!
     @IBOutlet var shoes: UIImageView!
     
+    @IBAction func reloadRecommend(sender: AnyObject) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let userID = appDelegate.userID
+        let twitterAuthToken = appDelegate.twitterAuthToken
+        let twitterAuthTokenSecret = appDelegate.twitterAuthTokenSecret
+        
+        let rowData = "user_id=\(userID!)&provider=twitter&auth_token=\(twitterAuthToken!)&auth_token_secret=\(twitterAuthTokenSecret!)"
+        let encodeData = rowData.dataUsingEncoding(NSUTF8StringEncoding)
+        
+        let url = NSURL(string: "https://coree.herokuapp.com/api/user/cloths/recommendation")!
+        var request = NSMutableURLRequest(URL: url)
+        
+        // set the method(HTTP-GET)
+        request.HTTPMethod = "GET"
+        request.setValue("\(appDelegate.userID!):\(appDelegate.serverToken!)", forHTTPHeaderField: "Authorization")
+        
+        var task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {data, response, error in
+            var json = JSON(data: data)
+            
+            for (key: String, subJson: JSON) in json["cloths"] {
+                if((subJson["cloth"]["big_category_id"] != nil) && (subJson["cloth"]["icon"] != nil)) {
+                    //println(subJson["cloth"]["big_category_id"])
+                    var big_category = subJson["cloth"]["big_category_id"].int; //大カテゴリ
+                    var icon_url = subJson["cloth"]["icon"].string;//アイコンの画像
+                    self.setImage(big_category!, icon: icon_url!)
+                }
+            }
+            
+        })
+        task.resume()
+        
+    }
     
     /*天気の情報*/
     @IBOutlet var dateLabel: UILabel!
@@ -33,8 +65,8 @@ class RecommendViewController: UIViewController, CLLocationManagerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addLeftBarButtonWithImage(UIImage(named: "ic_menu_black_24dp")!)
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(red: 34/255, green: 37/255, blue: 63/255, alpha: 1.0)
+        //self.addLeftBarButtonWithImage(UIImage(named: "ic_menu_black_24dp")!)
+        //self.navigationItem.leftBarButtonItem?.tintColor = UIColor(red: 34/255, green: 37/255, blue: 63/255, alpha: 1.0)
         
         dateLabel.text = "load.."
         weatherLabel.text = ""
@@ -61,7 +93,7 @@ class RecommendViewController: UIViewController, CLLocationManagerDelegate{
             
             for (key: String, subJson: JSON) in json["cloths"] {
                 if((subJson["cloth"]["big_category_id"] != nil) && (subJson["cloth"]["icon"] != nil)) {
-                    println(subJson["cloth"]["big_category_id"])
+                    //println(subJson["cloth"]["big_category_id"])
                     var big_category = subJson["cloth"]["big_category_id"].int; //大カテゴリ
                     var icon_url = subJson["cloth"]["icon"].string;//アイコンの画像
                     self.setImage(big_category!, icon: icon_url!)
@@ -170,7 +202,7 @@ class RecommendViewController: UIViewController, CLLocationManagerDelegate{
     //APIから呼び出した画像をセット
     func setImage(id: Int,icon: String) {
         
-        println(icon)
+        //println(icon)
 
         let url = NSURL(string: icon)
         var err: NSError?;

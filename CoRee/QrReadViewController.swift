@@ -13,12 +13,11 @@ import AVFoundation
 QRコード読み取り
 */
 class QrReadViewController: UIViewController ,AVCaptureMetadataOutputObjectsDelegate{
+    let mySession: AVCaptureSession! = AVCaptureSession()
     
-    var cnt = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // セッションの作成.
-        let mySession: AVCaptureSession! = AVCaptureSession()
         
         // デバイス一覧の取得.
         let devices = AVCaptureDevice.devices()
@@ -45,11 +44,11 @@ class QrReadViewController: UIViewController ,AVCaptureMetadataOutputObjectsDele
         let myMetadataOutput: AVCaptureMetadataOutput! = AVCaptureMetadataOutput()
         
         if mySession.canAddOutput(myMetadataOutput) {
+            
             // セッションに追加.
             mySession.addOutput(myMetadataOutput)
             // Meta情報を取得した際のDelegateを設定.
             myMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
-            // 判定するMeta情報にQRCodeを設定.
             myMetadataOutput.metadataObjectTypes = [AVMetadataObjectTypeQRCode]
         }
         
@@ -66,11 +65,12 @@ class QrReadViewController: UIViewController ,AVCaptureMetadataOutputObjectsDele
     }
     
     // Meta情報を検出際に呼ばれるdelegate.
+    var count = 0
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
-        cnt += 1
-        if metadataObjects.count > 0 && cnt == 1 {
+        if metadataObjects.count > 0 {
+            println(metadataObjects.count)
             let qrData: AVMetadataMachineReadableCodeObject  = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
-            println("\(qrData.stringValue)")
+            //println("\(qrData.stringValue)")
             
             var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             let userID = appDelegate.userID
@@ -87,15 +87,22 @@ class QrReadViewController: UIViewController ,AVCaptureMetadataOutputObjectsDele
             request.HTTPMethod = "GET"
             request.setValue("\(appDelegate.userID!):\(appDelegate.serverToken!)", forHTTPHeaderField: "Authorization")
             
+            
             var task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {data, response, error in
                 var json = JSON(data: data)
                 //println(json)
                 if(json["msg"].string == "success"){
-                    self.performSegueWithIdentifier("AddNewClothViewController",sender: json["cloth"].object)
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        self.performSegueWithIdentifier("AddNewClothViewController",sender: json["cloth"].object)
+                    })
                 }
             })
             task.resume()
+            
         }
+        self.mySession.stopRunning()
+        
+
     }
     // Segue 準備
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
@@ -104,6 +111,7 @@ class QrReadViewController: UIViewController ,AVCaptureMetadataOutputObjectsDele
             
             setView.clothNameValue = sender["name"] as! String
             setView.clothImageValue = sender["icon"] as! String
+            setView.clothAmountValue = sender["amount"] as! Int
         }
     }
 }
