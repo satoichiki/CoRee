@@ -22,6 +22,18 @@
 		D258966D1B2C4BFF00D6CF55 /* pants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25896681B2C4BFF00D6CF55 /* pants.jpg */; };
 		D258966E1B2C4BFF00D6CF55 /* shoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D25896691B2C4BFF00D6CF55 /* shoes.jpg */; };
 		D258966F1B2C4BFF00D6CF55 /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D258966A1B2C4BFF00D6CF55 /* tops.jpg */; };
+		D25896711B2C530A00D6CF55 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896701B2C530A00D6CF55 /* CoreLocation.framework */; };
+		D25896731B2C531A00D6CF55 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896721B2C531A00D6CF55 /* SwiftyJSON.swift */; };
+		D258967A1B2C779100D6CF55 /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = D25896771B2C779100D6CF55 /* clouds.png */; };
+		D258967B1B2C779100D6CF55 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = D25896781B2C779100D6CF55 /* rain.png */; };
+		D258967C1B2C779100D6CF55 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = D25896791B2C779100D6CF55 /* sun.png */; };
+		D25896821B2C86AC00D6CF55 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D258967E1B2C86AC00D6CF55 /* Fabric.framework */; };
+		D25896831B2C86AC00D6CF55 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D258967F1B2C86AC00D6CF55 /* TwitterKit.framework */; };
+		D25896841B2C86AC00D6CF55 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D25896801B2C86AC00D6CF55 /* TwitterKitResources.bundle */; };
+		D25896851B2C86AC00D6CF55 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25896811B2C86AC00D6CF55 /* TwitterCore.framework */; };
+		D25896891B2CB41100D6CF55 /* QrReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896881B2CB41100D6CF55 /* QrReadViewController.swift */; };
+		D258968B1B2CBE8600D6CF55 /* AddNewClothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258968A1B2CBE8600D6CF55 /* AddNewClothViewController.swift */; };
+		D25896911B2CE56100D6CF55 /* Singletone.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25896901B2CE56100D6CF55 /* Singletone.swift */; };
 		D2EEE77D1B2AE2EA00BC871B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */; };
 		D2EEE7821B2AE2EA00BC871B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7801B2AE2EA00BC871B /* Main.storyboard */; };
 		D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2EEE7831B2AE2EA00BC871B /* Images.xcassets */; };
@@ -61,6 +73,18 @@
 		D25896681B2C4BFF00D6CF55 /* pants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pants.jpg; sourceTree = "<group>"; };
 		D25896691B2C4BFF00D6CF55 /* shoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoes.jpg; sourceTree = "<group>"; };
 		D258966A1B2C4BFF00D6CF55 /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tops.jpg; sourceTree = "<group>"; };
+		D25896701B2C530A00D6CF55 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D25896721B2C531A00D6CF55 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		D25896771B2C779100D6CF55 /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
+		D25896781B2C779100D6CF55 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		D25896791B2C779100D6CF55 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		D258967E1B2C86AC00D6CF55 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		D258967F1B2C86AC00D6CF55 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		D25896801B2C86AC00D6CF55 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		D25896811B2C86AC00D6CF55 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		D25896881B2CB41100D6CF55 /* QrReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrReadViewController.swift; sourceTree = "<group>"; };
+		D258968A1B2CBE8600D6CF55 /* AddNewClothViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewClothViewController.swift; sourceTree = "<group>"; };
+		D25896901B2CE56100D6CF55 /* Singletone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Singletone.swift; path = ../Singletone.swift; sourceTree = "<group>"; };
 		D2EEE7771B2AE2EA00BC871B /* CoRee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoRee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2EEE77B1B2AE2EA00BC871B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25896711B2C530A00D6CF55 /* CoreLocation.framework in Frameworks */,
+				D25896851B2C86AC00D6CF55 /* TwitterCore.framework in Frameworks */,
+				D25896821B2C86AC00D6CF55 /* Fabric.framework in Frameworks */,
+				D25896831B2C86AC00D6CF55 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,9 +149,21 @@
 			name = "cloth-image";
 			sourceTree = "<group>";
 		};
+		D25896761B2C778200D6CF55 /* weather-icon */ = {
+			isa = PBXGroup;
+			children = (
+				D25896771B2C779100D6CF55 /* clouds.png */,
+				D25896781B2C779100D6CF55 /* rain.png */,
+				D25896791B2C779100D6CF55 /* sun.png */,
+			);
+			name = "weather-icon";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		D2EEE76E1B2AE2EA00BC871B = {
 			isa = PBXGroup;
 			children = (
+				D25896701B2C530A00D6CF55 /* CoreLocation.framework */,
 				D2EEE7791B2AE2EA00BC871B /* CoRee */,
 				D25896351B2C1C6000D6CF55 /* Extension */,
 				D2EEE78F1B2AE2EA00BC871B /* CoReeTests */,
@@ -143,10 +183,14 @@
 		D2EEE7791B2AE2EA00BC871B /* CoRee */ = {
 			isa = PBXGroup;
 			children = (
+				D25896721B2C531A00D6CF55 /* SwiftyJSON.swift */,
 				D2EEE77C1B2AE2EA00BC871B /* AppDelegate.swift */,
 				D2EEE7A61B2BF46B00BC871B /* RecommendViewController.swift */,
 				D2EEE79E1B2BEFBC00BC871B /* LoginViewController.swift */,
 				D2EEE7AA1B2BFBDB00BC871B /* LoginLoadViewController.swift */,
+				D25896881B2CB41100D6CF55 /* QrReadViewController.swift */,
+				D25896901B2CE56100D6CF55 /* Singletone.swift */,
+				D258968A1B2CBE8600D6CF55 /* AddNewClothViewController.swift */,
 				D25896511B2C24C800D6CF55 /* MenuViewController.swift */,
 				D25896531B2C24C800D6CF55 /* ClosetViewController.swift */,
 				D258965F1B2C3A4400D6CF55 /* ClosetDetailViewController.swift */,
@@ -157,6 +201,11 @@
 				D2EEE7A21B2BF11700BC871B /* background-login-img.jpeg */,
 				D2EEE79C1B2BE74700BC871B /* CoRee-title.png */,
 				D2EEE7A41B2BF1D600BC871B /* CoRee-white-title.png */,
+				D258967E1B2C86AC00D6CF55 /* Fabric.framework */,
+				D258967F1B2C86AC00D6CF55 /* TwitterKit.framework */,
+				D25896801B2C86AC00D6CF55 /* TwitterKitResources.bundle */,
+				D25896811B2C86AC00D6CF55 /* TwitterCore.framework */,
+				D25896761B2C778200D6CF55 /* weather-icon */,
 				D25896631B2C3DB100D6CF55 /* cloth-image */,
 				D2EEE77A1B2AE2EA00BC871B /* Supporting Files */,
 			);
@@ -198,6 +247,7 @@
 				D2EEE7731B2AE2EA00BC871B /* Sources */,
 				D2EEE7741B2AE2EA00BC871B /* Frameworks */,
 				D2EEE7751B2AE2EA00BC871B /* Resources */,
+				D258967D1B2C867B00D6CF55 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -272,9 +322,13 @@
 				D2EEE7A51B2BF1D600BC871B /* CoRee-white-title.png in Resources */,
 				D2EEE7A31B2BF11700BC871B /* background-login-img.jpeg in Resources */,
 				D258966C1B2C4BFF00D6CF55 /* jacket.jpg in Resources */,
+				D25896841B2C86AC00D6CF55 /* TwitterKitResources.bundle in Resources */,
 				D258966E1B2C4BFF00D6CF55 /* shoes.jpg in Resources */,
 				D258966F1B2C4BFF00D6CF55 /* tops.jpg in Resources */,
 				D2EEE7871B2AE2EA00BC871B /* LaunchScreen.xib in Resources */,
+				D258967B1B2C779100D6CF55 /* rain.png in Resources */,
+				D258967C1B2C779100D6CF55 /* sun.png in Resources */,
+				D258967A1B2C779100D6CF55 /* clouds.png in Resources */,
 				D258966D1B2C4BFF00D6CF55 /* pants.jpg in Resources */,
 				D2EEE7841B2AE2EA00BC871B /* Images.xcassets in Resources */,
 				D2EEE79D1B2BE74700BC871B /* CoRee-title.png in Resources */,
@@ -291,6 +345,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D258967D1B2C867B00D6CF55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e6b7474c7684fcdfda237dce2a38cb75b2e2d962 0e97dea556fff341ec1566843ddd5deae8b01914953194f04aadf74fe3eed530";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2EEE7731B2AE2EA00BC871B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -299,6 +369,8 @@
 				D2EEE79F1B2BEFBC00BC871B /* LoginViewController.swift in Sources */,
 				D25896621B2C3C2600D6CF55 /* ClosetCell.swift in Sources */,
 				D2EEE7A71B2BF46B00BC871B /* RecommendViewController.swift in Sources */,
+				D25896891B2CB41100D6CF55 /* QrReadViewController.swift in Sources */,
+				D25896731B2C531A00D6CF55 /* SwiftyJSON.swift in Sources */,
 				D25896591B2C24C800D6CF55 /* ClosetViewController.swift in Sources */,
 				D258965A1B2C24C800D6CF55 /* ProfileViewController.swift in Sources */,
 				D25896601B2C3A4400D6CF55 /* ClosetDetailViewController.swift in Sources */,
@@ -307,8 +379,10 @@
 				D2EEE77D1B2AE2EA00BC871B /* AppDelegate.swift in Sources */,
 				D258963C1B2C1CA300D6CF55 /* UITableViewExtension.swift in Sources */,
 				D25896371B2C1C9500D6CF55 /* BaseTableViewCell.swift in Sources */,
+				D25896911B2CE56100D6CF55 /* Singletone.swift in Sources */,
 				D258963D1B2C1CA300D6CF55 /* UIViewControllerExtension.swift in Sources */,
 				D258962B1B2C082200D6CF55 /* SlideMenuController.swift in Sources */,
+				D258968B1B2CBE8600D6CF55 /* AddNewClothViewController.swift in Sources */,
 				D2EEE7AB1B2BFBDB00BC871B /* LoginLoadViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +510,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoRee",
+				);
 				INFOPLIST_FILE = CoRee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +524,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoRee",
+				);
 				INFOPLIST_FILE = CoRee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

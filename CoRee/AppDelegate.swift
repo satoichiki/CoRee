@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import Fabric
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    private func createMenuView() {
+    var twitterAuthToken:String?
+    var twitterAuthTokenSecret:String?
+    var userID:String?
+    
+    var serverToken:String?
+    
+    func createMenuView() {
         
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -26,14 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: menuViewController)
         
-        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
     }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        self.createMenuView()
+
+        //self.createMenuView()
+        Fabric.with([Twitter()])
         
         return true
     }
